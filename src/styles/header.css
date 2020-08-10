@@ -1,0 +1,107 @@
+.header{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: brown ;
+    align-items: center;
+}
+.header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .logo .logoHeader{
+    width: 100px;
+    float: left;
+}
+
+.header .menuHeader .listMenu{
+    list-style: none;
+    width: 100%;
+}
+.header .menuHeader .listMenu li{
+    padding: 20px;
+    float: left;
+}
+.header .menuHeader .listMenu li a{
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+.cartLogo{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+.countCart{
+    position: absolute;
+    color: red;
+    right: 8px;
+    font-weight: bold;
+}
+@media screen and (min-width: 601px) {
+    .menuOpen, .menuClose{
+        display: none;
+    }
+    .header .menuHeader{
+        display: flex !important;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .menuOpen{
+        display: block;
+        font-size: 40px;
+        color: white;
+        position: absolute;
+    }
+    .menuClose{
+        display: block;
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        top : 10;
+        left: 10;
+    }
+    .header .menuHeader {
+        display: none;
+        position: fixed;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        z-index: 101;
+    }
+    .header .menuHeader .listMenu{
+        float: right;
+        width: 80%;
+        background-color: bisque;
+        height: 100%;
+        overflow-y: auto;
+        padding: 0px;
+    }
+    .header .menuHeader .listMenu li{
+        padding: 20px;
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    .header .menuHeader .listMenu li a{
+        color: #000;
+    }
+}

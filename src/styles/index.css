@@ -1,0 +1,99 @@
+.list-product {
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+}
+.list-product .product{
+    float: left;
+}
+.list-product .product .item-product{
+    border: 1px solid #ccc;
+    background: white;
+    display: table;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    margin: 0px 0px 10px 0px;
+    float: left;
+    padding: 10px;
+}
+.list-product .product .item-product .img-product{
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: left;
+    object-fit: contain;
+}
+.list-product .product .item-product .title-product{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.list-product .product .item-product .des-product{
+    font-size: 14px;
+    font-weight: 100;
+    color: slategrey;
+    float: left;
+    width: 100%;
+}
+.list-product .product .item-product .price{
+    width: 100%;
+    float: left;
+    font-weight: bold;
+}
+
+.list-product .product .item-product .price > del {
+    font-weight: 500;
+    color: #dddddd;
+    margin-left: 10px;
+}
+.list-product .product .item-product .price > strong {
+    font-weight: 500;
+    color: brown;
+    margin-left: 10px;
+}
+.list-product .product .item-product .quantity{
+    width: 100%;
+    clear: both;
+    display: flex;
+}
+.list-product .product .item-product .quantity > p {
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+.list-product .product .item-product .quantity > span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    justify-content: center;
+    float: left;
+    margin-right: 10px;
+}
+.list-product .product .item-product .quantity > i {
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+.list-product .product .item-product .btn-product{
+    width: 40%;
+    float: left;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-product .product .item-product .btn-product p{
+    margin: 0 0 0 10px;
+}
